@@ -1,0 +1,13 @@
+#toDo
+{
+    margin:auto;
+    margin-top: 5%;
+    text-align: center;
+    background-color: rgb(198, 186, 231);
+    color: white;
+    font-family:cursive;
+}
+#buttonDelete
+{
+    float: right;
+}
