@@ -11,15 +11,6 @@ btn.addEventListener("click",function(e)
         alert("Add An Item");
         return;
     }
-    /*var newTask = document.createElement("li");
-    newTask.appendChild(document.createTextNode(input.value));
-    var deleteSymbol=document.createElement("a");
-    deleteSymbol.className="delete-item";
-    deleteSymbol.setAttribute('href', '#');
-    deleteSymbol.innerHTML = '<i class="fas fa-times"></i>';
-    deleteSymbol.style.float="right";
-    newTask.appendChild(deleteSymbol);
-    list.appendChild(newTask);*/
     addItem(input.value);
     setItemToLS(input.value);
     input.value="";
@@ -52,23 +43,7 @@ function deleteAnItem(e)
 deleteBtn.addEventListener("click",deleteAllItems);
 function deleteAllItems(e)
 {
-    
-        /*console.log(list.childNodes.length);
-        list.childNodes.forEach(function (item) {
-            if (item.nodeType === 1) {
-                console.log("tur");
-                item.remove();
-            }
-        });*/
-       /* if (confirm('are you sure ?')) {
-            // taskList.innerHTML='';
-            list.childNodes.forEach(function (item) {
-                console.log("tur");
-                if (item.nodeType === 1) {
-                    item.remove();
-                }
-            });
-        }*/
+   
         for(let i=list.childNodes.length-1;i>0;i--)
         {
             if(list.childNodes[i].nodeType==1)
